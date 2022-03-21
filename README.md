@@ -7,19 +7,19 @@
 <li> Write a query that selects student_id and number of absent dates for each user who has more than 3 absent dates. Check-in dates are distinct<br></li>
 
 Querry is:
-<i>select student_id , count() as "absent dates"
-From attendance as a1
-GROUP BY(student_id)
-Having count(absent_flag) > 3
+<i>select student_id , count() as "absent dates"<br>
+From attendance as a1<br>
+GROUP BY(student_id)<br>
+Having count(absent_flag) > 3<br>
 </i>
  
 
 
 
 You can work shell by:
-<i>from Section1 import connect_db
+<i>from Section1 import connect_db<br><br>
 
-for items in connect_db.check_absent_date_gt_3():
+for items in connect_db.check_absent_date_gt_3():<br>
 &#160;&#160;&#160;&#160;print('student id: {}, absent date: {}'.format(items[0],items[1]))
 </i><br>
 
