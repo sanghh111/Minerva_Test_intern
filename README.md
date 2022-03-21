@@ -69,7 +69,7 @@ nums[2] = nums[3] = 1<br>
 My idea: The first create a empty list purpose is the output then i create frist pointer loop from in  frist  list to near end  list. Each i create second pointer loop from first pointer plus 1 to end list. if i see value position first pointer equal second pointer then i append output list is tupple fotmat(position first pointer and second pointer)
 
 Work on shell:
-<code>from Section2 import solusion1</code>
+<code>from Section2.solusion1 import solusion_1</code>
 
 funcion:<code>solution_1(string)</code> return list all pairs (i, j)
 
@@ -109,7 +109,7 @@ Example 3:
 My idea: Find a max character then i find position in the alphabet then i plus one. Create a list with length equal position i find it and value each item in list equal zero with purpose is source appear in the input. Final i check couple from posion first list to end list if the fist value less i return false and if i find 1 value equal zero i return False
 
 Work on shell:
-<code>from Section2 import solusion2</code>
+<code>from Section2.solusion2 import is_beautiful_string</code>
 
 funcion:<code>is_beautiful_string(string)</code> Return true if the string is beautiful, false otherwise
 
