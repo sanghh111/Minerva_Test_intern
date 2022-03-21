@@ -6,22 +6,22 @@
 <ol>
 <li> Write a query that selects student_id and number of absent dates for each user who has more than 3 absent dates. Check-in dates are distinct<br></li>
 
-Querry is:<br>
-<code>select student_id , count() as "absent dates"<br>
-From attendance as a1<br>
-GROUP BY(student_id)<br>
-Having count(absent_flag) > 3<br>
-</code>
+Querry is:
+<i>select student_id , count() as "absent dates"
+From attendance as a1
+GROUP BY(student_id)
+Having count(absent_flag) > 3
+</i>
  
 
 
 
 You can work shell by:
-<code>from Section1 import connect_db<br><br>
+<i>from Section1 import connect_db
 
-for items in connect_db.check_absent_date_gt_3():<br>
+for items in connect_db.check_absent_date_gt_3():
 &#160;&#160;&#160;&#160;print('student id: {}, absent date: {}'.format(items[0],items[1]))
-</code><br>
+</i><br>
 
 <li>How many types of pagination in SQL?</li>
 It have two types of pagination in SQL
