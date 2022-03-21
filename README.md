@@ -16,7 +16,7 @@ Having count(absent_flag) > 3<br>
 
 
 
-You can work shell by:
+You can work shell by:<br>
 <i>from Section1 import connect_db<br><br>
 
 for items in connect_db.check_absent_date_gt_3():<br>
